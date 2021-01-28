@@ -1,8 +1,6 @@
 package dev.bombardy.rankuponclaim.listeners;
 
 import dev.bombardy.rankuponclaim.RankupOnClaim;
-import net.luckperms.api.context.ContextSet;
-import net.luckperms.api.model.data.DataType;
 import net.luckperms.api.model.group.Group;
 import net.luckperms.api.model.user.User;
 import net.luckperms.api.node.types.InheritanceNode;

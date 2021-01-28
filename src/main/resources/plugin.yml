@@ -1,0 +1,6 @@
+name: RankupOnClaim
+main: dev.bombardy.rankuponclaim.RankupOnClaim
+version: @version@
+author: BomBardyGamer
+website: https://github.com/BomBardyGamer
+load: POSTWORLD

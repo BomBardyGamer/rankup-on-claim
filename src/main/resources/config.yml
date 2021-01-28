@@ -1,0 +1,9 @@
+# The name of the group they must have to be moved to citizen
+group_from: "member"
+
+# The name of the group they should be moved to
+group_to: "citizen"
+
+# The message to send when the player becomes a citizen
+# Colour codes supported
+message: "You are now a Citizen, Welcome Home!"

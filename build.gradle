@@ -1,0 +1,27 @@
+import org.apache.tools.ant.filters.ReplaceTokens
+
+plugins {
+    id 'java'
+    id 'com.github.johnrengelman.shadow' version '6.1.0'
+}
+
+group 'dev.bombardy'
+version '1.1'
+
+repositories {
+    mavenCentral()
+    maven { url 'https://papermc.io/repo/repository/maven-public/' }
+}
+
+dependencies {
+    compileOnly 'com.destroystokyo.paper:paper-api:1.16.4-R0.1-SNAPSHOT'
+    compileOnly 'net.luckperms:api:5.2'
+}
+
+shadowJar {
+    archiveFileName.set("RankupOnClaim-${project.version}.jar")
+}
+
+processResources {
+    filter ReplaceTokens, tokens: ["version": project.version.toString()]
+}

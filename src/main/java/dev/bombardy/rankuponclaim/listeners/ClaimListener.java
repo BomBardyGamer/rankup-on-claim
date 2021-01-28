@@ -41,10 +41,10 @@ public class ClaimListener implements Listener {
             user.data().remove(node);
             user.data().add(InheritanceNode.builder(plugin.getGroupTo()).build());
             plugin.getLuckPerms().getUserManager().saveUser(user);
-        }
 
-        player.sendMessage(ChatColor.translateAlternateColorCodes('&',
-                Objects.requireNonNull(plugin.getConfig().getString("message", "&aYou are now a Citizen, Welcome Home!")))
-        );
+            player.sendMessage(ChatColor.translateAlternateColorCodes('&',
+                    Objects.requireNonNull(plugin.getConfig().getString("message", "&aYou are now a Citizen, Welcome Home!")))
+            );
+        }
     }
 }

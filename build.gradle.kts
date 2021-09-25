@@ -14,8 +14,8 @@ repositories {
 }
 
 dependencies {
-    compileOnly("com.destroystokyo.paper:paper-api:1.16.4-R0.1-SNAPSHOT")
-    compileOnly("net.luckperms:api:5.2")
+    compileOnly("io.papermc.paper", "paper-api", "1.17-R0.1-SNAPSHOT")
+    compileOnly("net.luckperms", "api", "5.3")
 }
 
 tasks {

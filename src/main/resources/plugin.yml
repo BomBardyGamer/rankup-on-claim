@@ -1,5 +1,5 @@
 name: RankupOnClaim
-main: dev.bombardy.rankuponclaim.RankupOnClaim
+main: me.bardy.rankuponclaim.RankupOnClaim
 version: @version@
 author: BomBardyGamer
 website: https://github.com/BomBardyGamer

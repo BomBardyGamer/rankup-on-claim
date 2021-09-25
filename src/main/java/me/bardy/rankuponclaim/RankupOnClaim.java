@@ -21,9 +21,9 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
-package dev.bombardy.rankuponclaim;
+package me.bardy.rankuponclaim;
 
-import dev.bombardy.rankuponclaim.listeners.ClaimListener;
+import me.bardy.rankuponclaim.listeners.ClaimListener;
 import net.luckperms.api.LuckPerms;
 import net.luckperms.api.model.group.Group;
 import org.bukkit.Bukkit;

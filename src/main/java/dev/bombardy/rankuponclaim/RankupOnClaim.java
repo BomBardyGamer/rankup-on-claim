@@ -26,7 +26,7 @@ public class RankupOnClaim extends JavaPlugin {
             return;
         }
 
-        RegisteredServiceProvider<LuckPerms> luckPermsProvider = Bukkit.getServicesManager().getRegistration(LuckPerms.class);
+        final RegisteredServiceProvider<LuckPerms> luckPermsProvider = Bukkit.getServicesManager().getRegistration(LuckPerms.class);
         if (luckPermsProvider == null) {
             getLogger().severe("For some reason, I couldn't find the LuckPerms registration.");
             return;

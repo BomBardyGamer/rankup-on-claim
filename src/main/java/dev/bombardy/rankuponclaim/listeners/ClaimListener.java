@@ -29,11 +29,11 @@ public class ClaimListener implements Listener {
     @EventHandler
     public void onClaimCommand(PlayerCommandPreprocessEvent event) {
         if (!CLAIM_COMMAND_PATTERN.matcher(event.getMessage()).matches()) return;
-        Player player = event.getPlayer();
+        final Player player = event.getPlayer();
 
-        User user = plugin.getLuckPerms().getPlayerAdapter(Player.class).getUser(player);
-        InheritanceNode node = InheritanceNode.builder(plugin.getGroupFrom()).build();
-        Collection<Group> groups = user.getInheritedGroups(QueryOptions.nonContextual());
+        final User user = plugin.getLuckPerms().getPlayerAdapter(Player.class).getUser(player);
+        final InheritanceNode node = InheritanceNode.builder(plugin.getGroupFrom()).build();
+        final Collection<Group> groups = user.getInheritedGroups(QueryOptions.nonContextual());
 
         if (groups.contains(plugin.getGroupFrom())) {
             user.data().remove(node);
